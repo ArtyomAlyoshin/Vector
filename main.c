@@ -46,11 +46,46 @@ void test_popBack_notEmptyVector() {
 
 }
 
+void test_atVector_notEmptyVector() {
+    vector v = createVector(2);
+    pushBack(&v, 24);
+    pushBack(&v, 42);
+    int *a = atVector(&v, 1);
+    assert(*a == 42);
+}
+
+void test_atVector_requestToLastElement() {
+    vector v = createVector(3);
+    pushBack(&v, 24);
+    pushBack(&v, 42);
+    pushBack(&v, 88);
+    int *a = atVector(&v, 2);
+    assert(*a == 88);
+}
+
+void test_back_oneElementInVector() {
+    vector v = createVector(1);
+    pushBack(&v, 24);
+    int *a = back(&v);
+    assert(*a == 24);
+}
+
+void test_front_oneElementInVector() {
+    vector v = createVector(1);
+    pushBack(&v, 24);
+    int *a = front(&v);
+    assert(*a == 24);
+}
+
 void test() {
     test_pushBack_emptyVector();
     test_pushBack_fullVector();
     test_pushBack_fullVector2();
     test_popBack_notEmptyVector();
+    test_atVector_notEmptyVector();
+    test_atVector_requestToLastElement();
+    test_back_oneElementInVector();
+    test_front_oneElementInVector();
 }
 
 int main() {
