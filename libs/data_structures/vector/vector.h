@@ -1,0 +1,6 @@
+
+
+#ifndef VECTORLAB_VECTOR_H
+#define VECTORLAB_VECTOR_H
+
+#endif //VECTORLAB_VECTOR_H
