@@ -22,8 +22,7 @@ void reserve(vector *v, size_t newCapacity);
 //удаляет элементы из контейнера, но не освобождает выделенную память
 void clear(vector *v);
 
-//освобождает память, выделенную под
-//неиспользуемые элементы
+//освобождает память, выделенную под неиспользуемые элементы
 void shrinkToFit(vector *v);
 
 //освобождает память, выделенную вектору
@@ -46,11 +45,12 @@ void popBack(vector *v);
 
 //возвращает указатель на
 //index-ый элемент вектора
-int* atVector(vector *v, size_t index);
+int *atVector(vector *v, size_t index);
 
 //возвращает указатель на последний элемент вектора
-int* back(vector *v);
+int *back(vector *v);
 
 //возвращает указатель на первый элемент вектора
-int* front(vector *v);
+int *front(vector *v);
+
 #endif //VECTORLAB_VECTOR_H

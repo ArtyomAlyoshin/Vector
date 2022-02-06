@@ -9,7 +9,7 @@ vector createVector(const size_t n) {
     return (vector) {a, 0, n};
 }
 
-//исправлена ошибка(
+
 void reserve(vector *v, size_t newCapacity) {
     if (newCapacity) {
         v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
@@ -17,23 +17,23 @@ void reserve(vector *v, size_t newCapacity) {
             fprintf(stderr, "bad alloc ");
             exit(1);
         }
+        v->capacity = newCapacity;
+        if (newCapacity < v->size)
+            v->size = newCapacity;
     } else
-        v->data = NULL;
-    if (newCapacity < v->size)
-        v->size = newCapacity;
-    v->capacity = newCapacity;
+        deleteVector(v);
 }
 
 void clear(vector *v) {
     v->size = 0;
 }
 
-//исправление
+
 void shrinkToFit(vector *v) {
     reserve(v, v->size);
 }
 
-//тоже подправлено
+
 void deleteVector(vector *v) {
     free(v->data);
     v->data = NULL;
