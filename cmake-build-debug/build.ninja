@@ -61,6 +61,12 @@ build CMakeFiles/vectorLab.dir/libs/data_structures/vector/vector.c.obj: C_COMPI
   OBJECT_DIR = CMakeFiles\vectorLab.dir
   OBJECT_FILE_DIR = CMakeFiles\vectorLab.dir\libs\data_structures\vector
 
+build CMakeFiles/vectorLab.dir/libs/data_structures/voidVector/voidVector.c.obj: C_COMPILER__vectorLab_Debug C$:/Users/User/Desktop/prog/vectorLab/libs/data_structures/voidVector/voidVector.c || cmake_object_order_depends_target_vectorLab
+  DEP_FILE = CMakeFiles\vectorLab.dir\libs\data_structures\voidVector\voidVector.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\vectorLab.dir
+  OBJECT_FILE_DIR = CMakeFiles\vectorLab.dir\libs\data_structures\voidVector
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target vectorLab
@@ -69,7 +75,7 @@ build CMakeFiles/vectorLab.dir/libs/data_structures/vector/vector.c.obj: C_COMPI
 #############################################
 # Link the executable vectorLab.exe
 
-build vectorLab.exe: C_EXECUTABLE_LINKER__vectorLab_Debug CMakeFiles/vectorLab.dir/main.c.obj CMakeFiles/vectorLab.dir/libs/data_structures/vector/vector.c.obj
+build vectorLab.exe: C_EXECUTABLE_LINKER__vectorLab_Debug CMakeFiles/vectorLab.dir/main.c.obj CMakeFiles/vectorLab.dir/libs/data_structures/vector/vector.c.obj CMakeFiles/vectorLab.dir/libs/data_structures/voidVector/voidVector.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\vectorLab.dir
