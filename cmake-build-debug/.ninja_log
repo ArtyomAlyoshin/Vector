@@ -1,5 +1,10 @@
 # ninja log v5
-2	1778	6658624916868642	build.ninja	20ca8d47db643945
+2	1778	6658650693518639	build.ninja	20ca8d47db643945
 112	1619	6658623500206197	CMakeFiles/vectorLab.dir/libs/data_structures/vector/vector.c.obj	2d66834a816d8fb5
 9	1501	6658623498847009	CMakeFiles/vectorLab.dir/main.c.obj	56580999b7c2f71b
 1620	2405	6658623507880239	vectorLab.exe	42f52a01b0dc0fcf
+3	1904	6658650693518639	build.ninja	20ca8d47db643945
+5	901	6658650704922166	CMakeFiles/vectorLab.dir/main.c.obj	56580999b7c2f71b
+8	962	6658650705851608	CMakeFiles/vectorLab.dir/libs/data_structures/vector/voidVector.c.obj	f0302281a33dd256
+10	1186	6658651046057973	CMakeFiles/vectorLab.dir/libs/data_structures/vector/voidVector.c.obj	f0302281a33dd256
+1187	1859	6658651053309203	vectorLab.exe	85a4901a11a5a81b
